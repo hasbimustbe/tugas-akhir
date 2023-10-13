@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Hasbi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to top left, rgba(146, 197, 111, 0.685), rgba(33, 194, 18, 0.555));
+            position: fixed;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            padding: 0.5em 1em;
+        }
+        nav ul li:hover {
+            background-color: rgb(76, 170, 76);
+            color: black;
+            transform: scale(1.1);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        #logo-wrapper img {
+            width: 100px;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding: 0.5em 2em;
+            padding-top: 7em;
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255, .2);
+            padding: 1em;
+            border-radius: .5em;
+        }
+
+        #content-1 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-2 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-3 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-4 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-5 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-6 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content-7 {
+            background: rgb(146, 173, 144);
+            background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        footer {
+            background-color: rgb(146, 173, 144);
+            color: #010a05;
+            text-align: center;
+            font-size: 10px;
+            padding: 1em;
+        }
+
+        #btn-contact-me {
+            background-color: blue;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0.3em;
+        }
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div id="logo-wrapper"></div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#content-1">Profil</a></li>
+                <li><a href="#content-2">Pendidikan</a></li>
+                <li><a href="#content-3">Minat</a></li>
+                <li><a href="#content-4">Keahlian</a></li>
+                <li><a href="#content-5">Pengalaman</a></li>
+                <li><a href="#content-6">Penghargaan</a></li>
+                <li><a href="#content-7">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="content-1" class="content">
+            <h3><span id="typed-element"></span></h3>
+
+            <div class="card">
+                <h1>Profil</h1>
+
+
+                <p>Kurang lebih selama 5 tahun saya telah terjun ke dunia profesional. Diawali dengan menjadi kurir sepeda, lalu dipercaya memimpin sebuah tim dengan menjadi PIC (Person in Charge), hingga akhirnya beralih menjadi admin dan operations team member. Semua peran itu saya laksanakan dengan penuh tanggung jawab. </p>
+                <p>Saya terbuka dan bersedia belajar hal baru, karenanya saya tidak membatasi diri hanya pada pengetahuan yang berkaitan dengan pekerjaan. Di luar itu saya memperkaya skill dengan mengikuti beberapa pelatihan berdasarkan minat seperti pelatihan jurnalistik dan web programmer.</p>
+
+            </div>
+
+        </section>
+
+        <section id="content-2" class="content">
+            <div class="card">
+                <h1>Pendidikan</h1>
+                <p>Gelar terakhir saya adalah sarjana strata 1 dalam bidang ilmu filsafat Islam. Saya raih dari Universitas Islam Negeri Syarif Hidayatullah Jakarta dalam kurun waktu yang bisa dibilang tidak singkat, yakni dari 2012 hingga 2019.</p>
+                <p>Mengapa begitu lama?</p>
+                <p>Ada beberapa faktor salah satunya karena saat itu selain kuliah saya juga bekerja. Sebab keasyikan mencari uang membuat saya lengah mengambil celah untuk meraih gelar S.Ag dengan tepat waktu.</p>
+            </div>
+        </section>
+        <section id="content-3" class="content">
+            <div class="card">
+                <h1>Minat</h1>
+                <p>Saya sangat tertarik dengan dunia tulis menulis. Sayangnya hingga kini tak satupun artikel maupun buku yang bisa saya hasilkan. Umpama orang ingin bisa berenang, namun tiap kali bertemu sungai atau laut ia lebih memilih naik perahu. Sangat menyedihkan. 😔</p>
+                <p>Dunia tulis menulis erat kaitannya dengan membaca. Semakin sering kita membaca maka stok kosakata di kepala akan semakin bertambah, dan pada gilirannya akan memudahkan dalam menulis. Tapi sayangnya sampai saat ini jumlah buku dan artikel yang saya baca bisa dihitung dengan jari. Ironi sekali. 😭 </p>
+            </div>
+        </section>
+        <section id="content-4" class="content">
+            <div class="card">
+                <h1>Keahlian</h1>
+                <p>Aldi Taher pernah bilang selama kita hidup di dunia ini pasti dilanda kebingungan. Banyak hal yang membuat kita bingung dan bagi saya salah satunya ketika harus menyebut keahlian apa yang saya miliki.</p>
+                <p>Saat menulis CV saya sering kali terpaku lama dibagian ini. Memikirkan apa keahlianku? Apa yang bisa kulakukan? Meski telah terjun ke dunia kerja selama kurang lebih 5 tahun dengan pekerjaan yang berbeda-beda, tapi saya selalu kesulitan menuliskan hal apa saja yang menjadi keahlian atau paling tidak yang bisa kukerjakan.</p>                              
+            </div>
+        </section>
+        <section id="content-5" class="content">
+            <div class="card">
+                <h1>Pengalaman</h1>
+                <p><h4>Admin dan Tim Operasional (Gaia Parenting, Januari - Desember 2022)</h4>
+                    <ul>
+                        <li>Menyusun jadwal kelas online dan IG Live selama sebulan. Lalu membuat link pendaftaran kelas melalui website OrderOnline dan landing page di Wordpress.</li>
+                        <li>Membuat course menggunakan website Teachable dan melakukan enrollment kepada tiap user berdasarkan course yang dipilih.</li>
+                        <li>Mem-follow up setiap pendaftaran yang masuk dan berhasil mencapai conversion rate di atas 70-75%.</li>
+                        <li> Melakukan upselling kepada 150-250 user setiap hari untuk meningkatkan retention rate.</li>
+                        <li>Menjawab pertanyaan user dan memberikan solusi atas problem yang dihadapi.</li>
+                        <li>Menyiapkan moderator, link Zoom dan link WhatsApp grup untuk pelaksanaan kelas online.</li>
+                        <li>Menginput database peserta dari masing-masing kelas berdasarkan kategori yang ditentukan.</li>
+                        <li>Melakukan interview kepada user tiap 3 bulan sekali atau ketika dibutuhkan dalam rangka meningkatkan kualitas produk/layanan.</li>
+                    </ul>
+                </p>
+                <p><h4>Person in Charge (Westbike Messenger Service, September 2019 - Desember 2022)</h4>
+                    <ul>
+                        <li>Meng-handle order yang masuk dari dan ke area yang ter-cover oleh tim. Berhasil mencapai succes rate di atas 95%.</li>
+                        <li>Berkoordinasi dengan PIC area lain terkait order yang tidak dapat dijangkau oleh tim.</li>
+                        <li>Melakukan dispatch order kepada rider yang bertugas dan memonitor hingga order tiba di tujuan.</li>
+                        <li>Menyusun daily dan monthly report jumlah order yang masuk.</li>
+                        <li>Melakukan evaluasi rutin agar performa tim tetap maksimal.</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section id="content-6" class="content">
+            <div class="card">
+                <h1>Penghargaan</h1>
+                <p>Penghargaan ya? Sejak memasuki dunia profesional saya tidak pernah mendapatkan penghargaan apapun.🤣 Tapi kalau sertifikat pelatihan ada beberapa yang saya punya. Berikut daftarnya:
+                    <ol>
+                        <li>Jurnalistik Dasar: Langkah Awal Jadi Jurnalis (Tempo Institute, 2021)</li>
+                        <li>Climate Change: Panduan Untuk Jurnalis (Tempo Institue, 2021)</li>
+                        <li>Kelas Jurnalistik Dasar: “Basics of Journalism” (Bootcamp Kentingan Journalism Week, 2022)</li>
+                        <li>Kelas Jurnalistik Data: Tameng Jurnalistik di Era Disrupsi Digital (Bootcamp Kentingan Journalism Week, 2022)</li>
+                        <li>Kelas Menulis Berita Online untuk Wartawan (Tempo Institue, 2023)</li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+
+        <section class="content" id="content-7">
+            <div class="card">
+                <h1>Contact</h1>
+                <h4>Halo, jika kamu punya pertanyaan, sampaikan melalui kolom di bawah ya. 😃</h4>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="Drop your email here" /> <br/>
+                <label for="name">Nama: </label>
+                <input type="name" id="name" name="name" placeholder="Could I know your name?" /> <br/>
+                <label for="question">Pertanyaan: </label>
+                <textarea name="question" id="question" cols="30" rows="1" placeholder="You can ask anything about Me!"></textarea> <br/><br/>
+
+                <button id="btn-contact-me" onclick="contactMe();"><i class="fa fa-paper-plane"></i>Send</button>            
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>&copy; 2023 All Rights Reserved. Faisal Hasbi.</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+        let typed = new Typed('#typed-element', {
+            strings: [
+                'Hello world!',
+                'Selamat datang di website saya.',
+                'Di website ini terdapat beberapa informasi tentang saya.',
+                'Silakan klik salah satu menu di bagian atas atau scroll ke bawah untuk informasi lebih lanjut.',
+                'Apabila ada pertanyaan yang tidak terjawab oleh informasi di website ini, silakan tulis di kolom paling bawah ya. 😊',
+                
+            ],
+            typeSpeed: 50,
+            backSpeed: 10,
+            loop: true
+        });
+
+        contactMe = () => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Sent!',
+                text: 'Thank you for contacting Me. I will reply as soon as possible!',
+            });
+        }
+
+    </script>
+
+</body>
+</html>
